@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Μάθημα:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+       <TextView
+        android:id="@+id/selectedLesson"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ToMathima"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Διάλεξε Διάλεξη"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+  
+
+    <Spinner
+        android:id="@+id/session_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/send_session"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Επιλογή Διάλεξης" />
+
+
+</LinearLayout>

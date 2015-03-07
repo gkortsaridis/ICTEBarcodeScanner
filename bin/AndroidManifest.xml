@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.georgekortsaridis.ictebarcodescanner"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+		<uses-permission android:name="android.permission.INTERNET" />
+		<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+		<uses-permission android:name="android.permission.CAMERA"/>
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="ICTE Barcode Scanner"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.georgekortsaridis.ictebarcodescanner.MainActivity"
+            android:label="ICTE Barcode Scanner" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+         <activity
+            android:name="com.georgekortsaridis.ictebarcodescanner.about"
+            android:label="About" 
+            android:theme="@android:style/Theme.Dialog" >
+            <intent-filter>
+                <action android:name="android.intent.action.ABOUT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.georgekortsaridis.ictebarcodescanner.loguserpass"
+            android:label="ICTE Barcode Scanner" >
+            <intent-filter>
+                <action android:name="android.intent.action.LOGUSERPASS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.georgekortsaridis.ictebarcodescanner.getsessions"
+            android:label="ICTE Barcode Scanner" >
+            <intent-filter>
+                <action android:name="android.intent.action.GETSESSIONS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.georgekortsaridis.ictebarcodescanner.scanandsend"
+            android:label="ICTE Barcode Scanner" >
+            <intent-filter>
+                <action android:name="android.intent.action.SCANANDSEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.georgekortsaridis.ictebarcodescanner.settings"
+            android:label="ICTE Barcode Scanner" >
+            <intent-filter>
+                <action android:name="android.intent.action.SETTINGS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+    </application>
+
+</manifest>
